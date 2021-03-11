@@ -155,7 +155,7 @@ contract RevShare is Ownable {
         );
 
         require(
-            choice < data.percentageTotal,
+            choice <= data.percentageTotal,
             "Input: input number for choice should be less than the total percentage"
         );
 
