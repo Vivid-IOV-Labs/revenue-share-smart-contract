@@ -106,3 +106,6 @@ truffle migrate --network
 ```
 To deploy the smart contracts to your local development network or an external network, based on the settings configured in the “truffle-config.js” file.
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
