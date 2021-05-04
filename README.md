@@ -1,28 +1,28 @@
-#Revenue Share Smart Contract
+# Revenue Share Smart Contract
 
 This repository contains the smart contracts used to demonstrate revenue sharing with Web Monetization. The logic is based on the probabilistic revenue sharing example shown on the “webmonetization.org” website.
 
 
-##Smart Contracts
+## Smart Contracts
 
-###Ownable.sol 
+### Ownable.sol 
 This helps ensure that only the account which deployed the smart contract can access certain function methods.
 
-###IterableMapping.sol  
+### IterableMapping.sol  
 This helps store the “Payment Pointers” and their associated weights in memory and exposes them so that they are also retrievable.
 
-###RevShare.sol  
+### RevShare.sol  
 This contains the function methods to add, remove, retrieve, or select “Payment Pointers”.
 
-####RevShare.sol public functions list
-#####add
-#####remove
-#####getOneEntry
-#####checkDataContains
-#####getArraySize
-#####getArrayStart
-#####getTotalPercentage
-#####pickPointer
+#### RevShare.sol public functions list
+##### add
+##### remove
+##### getOneEntry
+##### checkDataContains
+##### getArraySize
+##### getArrayStart
+##### getTotalPercentage
+##### pickPointer
 
 To connect the smart contract to a frontend, this following function could be used as an example for retrieving the “Payment Pointer” entries in the smart contract: -
 
@@ -54,7 +54,7 @@ const getArrayOfPaymentPointerEntries = async (_iteration, _index, _instance) =>
 }
 ```
 
-##Getting Started 
+## Getting Started 
 
 Truffle has been used here to help with testing the smart contracts locally and migrating the smart contracts to Ethereum blockchain networks. You can find out more about truffle with this link.
 
@@ -69,7 +69,7 @@ Setup your local “.env” file with your environment variables to store your �
 
 This example uses the Ethereum “Rinkeby” test network. You can configure your local truffle setup via the file called “truffle-config.js”. This file is where you setup your network settings for deploying the smart contract to a local development blockchain or connecting to an external blockchain network.
 
-###Development network
+### Development network
 
 Install "ganche-cli" or install the GUI version of ganache; a link to it can be found [here](https://www.trufflesuite.com/ganache)
 
@@ -83,11 +83,11 @@ In a new window start a local blockchain with ganache
 ganche-cli
 ```
 
-###External network
+### External network
 
 Ensure that external network settings are correct in the “truffle-config.js” file.
 
-###Usage
+### Usage
 
 ```bash
 truffle complie 
